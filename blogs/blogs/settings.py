@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'posts',
+    'profiles',
 ]
 
 MIDDLEWARE = [
@@ -120,8 +121,14 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR/"static"
 ]
+STATIC_ROOT = "static_root"
+
+MEDIA_ROOT = BASE_DIR/'media'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'posts.User'

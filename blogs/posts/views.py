@@ -9,3 +9,6 @@ def homeTest(request):
 
 def postTest(request):
     return render(request, "posts/posts_test.html")
+
+def postDetails(request, post_id):
+    return render(request, 'postDetails.html')
